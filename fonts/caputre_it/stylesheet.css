@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Capture it';
+    src: url('Captureit.woff2') format('woff2'),
+        url('Captureit.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

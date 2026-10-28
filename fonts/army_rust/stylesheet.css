@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ARMY RUST';
+    src: url('ARMYRUST.woff2') format('woff2'),
+        url('ARMYRUST.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
