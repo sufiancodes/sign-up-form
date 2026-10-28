@@ -1,0 +1,44 @@
+/* custom fonts */
+@font-face {
+  font-family: "Army Rust";
+  src: url(/fonts/army_rust/ARMYRUST.woff) format("woff");
+  src: url(/fonts/army_rust/ARMYRUST.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Capture it";
+  src: url(/fonts/caputre_it/Captureit.woff) format("woff");
+  src: url(/fonts/caputre_it/Captureit.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* css variable */
+:root {
+}
+/* css reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: "Army Rust", "Capture it", sans-serif;
+    line-height: 1.5;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+img, picture, video, svg, canvas{
+    display: block;
+    max-width: 100%;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
