@@ -7,6 +7,84 @@
     <title>Sign Up Form</title>
   </head>
   <body>
-    
+    <div class="left_side">
+      <div class="headline">
+        <img class="odin_logo" src="images/odin-lined.png" alt="Odin logo" />
+        <h1 class="odin_heading">ODIN</h1>
+      </div>
+      <small class="credit"
+        >Photo is taken by
+        <a href="https://unsplash.com/@baranlotfollahi">Baran Lotfollahi</a> on
+        <a href="https://unsplash.com/">Unsplash</a></small
+      >
+    </div>
+    <div class="right_side">
+      <div class="writing">
+        <div class="calling_user">
+          <p>This is not a real online service! You know you need something</p>
+          <p>like this to help you realize your deepest dreams.</p>
+          <p>Sign up now to get started.</p>
+        </div>
+        <div class="call_to_action">
+          <span>You <i>know </i> you want to.</span>
+        </div>
+      </div>
+      <form action="" method="post">
+        <div class="main_block_of_form">
+          <h2>Let's do this!</h2>
+          <div class="basic_alignment_style">
+            <div class="basic_stacking_style">
+              <label for="first_name">First Name</label>
+              <input type="text" id="first_name" />
+            </div>
+
+            <div class="basic_stacking_style">
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" />
+            </div>
+          </div>
+
+          <div class="basic_alignment_style">
+            <div class="basic_stacking_style">
+              <label for="email">Email</label>
+              <input type="email" id="email" required />
+            </div>
+
+            <div class="basic_stacking_style">
+              <label for="phone_number">Phone Number</label>
+              <input type="tel" id="phone_number" required />
+            </div>
+          </div>
+
+          <div class="basic_alignment_style">
+            <div class="basic_stacking_style">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                pattern="[a-zA-Z0-9]{8,}"
+                title="Must be at least 8 characters long and contain only letters and numbers."
+                required
+              />
+            </div>
+
+            <div class="basic_stacking_style">
+              <label for="confirm_password">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm_password"
+                required
+                pattern="[a-zA-Z0-9]{8,}"
+                title="Must be at least 8 characters long and contain only letters and numbers."
+              />
+            </div>
+          </div>
+        </div>
+        <button class="submit_button" type="submit">Create Account</button>
+        <div class="call_to_login">
+          <span>Already have an account? <a href="">Log in</a></span>
+        </div>
+      </form>
+    </div>
   </body>
 </html>

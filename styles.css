@@ -1,8 +1,16 @@
 /* custom fonts */
 @font-face {
-  font-family: "";
-  src: url() format("woff");
-  src: url() format("woff2");
+  font-family: "Norse";
+  src: url(/fonts/norse_2/Norse.woff) format("woff");
+  src: url(/fonts/norse_2/Norse.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Norse_Bold";
+  src: url(/fonts/norse_2/Norse-Bold.woff) format("woff");
+  src: url(/fonts/norse_2/Norse-Bold.woff2) format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -21,7 +29,7 @@
   padding: 0;
 }
 body {
-  font-family: "Army Rust", "Capture it", sans-serif;
+  font-family: "Norse_Bold", "Norse", sans-serif;
   line-height: 1.5;
 }
 input,
@@ -46,4 +54,106 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+body {
+  display: flex;
+}
+.left_side {
+  width: 35vw;
+  height: 100vh;
+  background-image: url(images/baran-lotfollahi-o9_3qq3iZ1w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.headline {
+  position: relative;
+  top: 250px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+}
+.odin_logo {
+  height: 120px;
+}
+.odin_heading {
+  font-size: 70px;
+  color: white;
+}
+.credit {
+  position: relative;
+  top: 800px;
+  left: 200px;
+  font-size: 15px;
+  color: white;
+}
+a:link {
+  color: rgb(151, 146, 146);
+}
+a:visited {
+  color: #596d48;
+}
+.right_side {
+  height: 100vh;
+  width: 65vw;
+}
+.writing {
+  padding-left: 50px;
+  padding-top: 130px;
+  font-family: "Norse";
+  margin-bottom: 46px;
+  font-size: 30px;
+}
+.calling_user {
+  font-weight: bold;
+}
+.call_to_action {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.main_block_of_form {
+  border: 2px solid whitesmoke;
+  box-shadow: 10px 10px whitesmoke;
+  padding-left: 48px;
+  padding-bottom: 30px;
+}
+.basic_stacking_style {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.basic_alignment_style {
+  display: flex;
+  gap: 70px;
+}
+input {
+  width: 240px;
+  height: 30px;
+  border: 1px solid #e5e7eb;
+}
+input[type="password"]:user-invalid {
+  border: 1px solid red;
+}
+input[type="password"]:user-valid {
+  border: 1px solid #596d48;
+}
+input:focus {
+  border-color: rgb(0, 162, 255);
+  outline: none;
+  box-shadow: 2px 2px whitesmoke;
+}
+.submit_button {
+  margin-left: 50px;
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  background-color: #596d48;
+  color: white;
+  border-radius: 7px;
+}
+.call_to_login {
+  padding-left: 50px;
+  padding-top: 25px;
+  font-size: 18px;
 }
